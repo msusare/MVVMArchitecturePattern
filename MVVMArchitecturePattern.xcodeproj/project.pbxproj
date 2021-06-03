@@ -15,6 +15,9 @@
 		F47F55CC2647F38600F8520A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F47F55CA2647F38600F8520A /* LaunchScreen.storyboard */; };
 		F47F55D72647F38600F8520A /* MVVMArchitecturePatternTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47F55D62647F38600F8520A /* MVVMArchitecturePatternTests.swift */; };
 		F47F55E22647F38600F8520A /* MVVMArchitecturePatternUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47F55E12647F38600F8520A /* MVVMArchitecturePatternUITests.swift */; };
+		F47F55F42647FE8700F8520A /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47F55F32647FE8700F8520A /* Person.swift */; };
+		F47F55FA2647FED100F8520A /* PersonFollowingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47F55F92647FED100F8520A /* PersonFollowingTableViewCell.swift */; };
+		F47F5600264800BD00F8520A /* PersonFollowingTableViewCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47F55FF264800BD00F8520A /* PersonFollowingTableViewCellViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +52,9 @@
 		F47F55DD2647F38600F8520A /* MVVMArchitecturePatternUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MVVMArchitecturePatternUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F47F55E12647F38600F8520A /* MVVMArchitecturePatternUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVVMArchitecturePatternUITests.swift; sourceTree = "<group>"; };
 		F47F55E32647F38600F8520A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F47F55F32647FE8700F8520A /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		F47F55F92647FED100F8520A /* PersonFollowingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonFollowingTableViewCell.swift; sourceTree = "<group>"; };
+		F47F55FF264800BD00F8520A /* PersonFollowingTableViewCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonFollowingTableViewCellViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +105,9 @@
 		F47F55BE2647F38500F8520A /* MVVMArchitecturePattern */ = {
 			isa = PBXGroup;
 			children = (
+				F47F55FE2648006800F8520A /* ViewModel */,
+				F47F55F82647FEA900F8520A /* View */,
+				F47F55F22647FE7500F8520A /* Models */,
 				F47F55BF2647F38500F8520A /* AppDelegate.swift */,
 				F47F55C12647F38500F8520A /* SceneDelegate.swift */,
 				F47F55C32647F38500F8520A /* ViewController.swift */,
@@ -126,6 +135,30 @@
 				F47F55E32647F38600F8520A /* Info.plist */,
 			);
 			path = MVVMArchitecturePatternUITests;
+			sourceTree = "<group>";
+		};
+		F47F55F22647FE7500F8520A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F47F55F32647FE8700F8520A /* Person.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F47F55F82647FEA900F8520A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F47F55F92647FED100F8520A /* PersonFollowingTableViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F47F55FE2648006800F8520A /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				F47F55FF264800BD00F8520A /* PersonFollowingTableViewCellViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,7 +292,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				F47F55C42647F38500F8520A /* ViewController.swift in Sources */,
+				F47F5600264800BD00F8520A /* PersonFollowingTableViewCellViewModel.swift in Sources */,
+				F47F55FA2647FED100F8520A /* PersonFollowingTableViewCell.swift in Sources */,
 				F47F55C02647F38500F8520A /* AppDelegate.swift in Sources */,
+				F47F55F42647FE8700F8520A /* Person.swift in Sources */,
 				F47F55C22647F38500F8520A /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
